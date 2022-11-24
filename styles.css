@@ -140,7 +140,7 @@ nav .fa {
     position: relative;
 }
 h1 {
-    padding: 5%;
+    padding: 5% 5% 0% 5%;
     color: #fff;
     font-size: 36px;
     font-weight: 600;
@@ -162,6 +162,7 @@ p {
 }
 .slider {
     --slider-index: 0;
+    --items-per-screen: 1;
     display: flex;
     flex: 0 0 90%;
     width: 90%;
@@ -183,10 +184,18 @@ p {
     box-sizing: border-box; */
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/MainMenu.png);
 }
 #bullets {
     background-image: linear-gradient(rgba(4,9,30,0.8), rgba(4,9,30,0.8)), url(images/MainMenu.png);
+}
+#treatment {
+    background-image: linear-gradient(rgba(4,9,30,0.8), rgba(4,9,30,0.8)), url(images/Home.png);
+}
+#path {
+    background-image: linear-gradient(rgba(4,9,30,0.8), rgba(4,9,30,0.8)), url(images/sample_map.png);
+}
+#unity {
+    background-image: linear-gradient(rgba(4,9,30,0.8), rgba(4,9,30,0.8)), url(images/unity_waterfall.gif);
 }
 
 .slider > img {
@@ -209,28 +218,41 @@ p {
     border-radius: 15px / 20px;
     width: 10%;
     min-width: 50px;
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .3);
     z-index: 10;
     cursor: pointer;
+    text-align: center;
 }
 .handle:hover {
     transition: 150ms ease-in-out;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, .5);
 }
 .handle:hover #leftArrow {
+    visibility: visible;
+    width: 50%;
+    transition: 150ms ease-in-out;
+}
+.handle:hover #rightArrow {
+    visibility: visible;
     width: 50%;
     transition: 150ms ease-in-out;
 }
 .handle:focus {
     transition: 150ms ease-in-out;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, .5);
 }
 .handle:focus #leftArrow {
     visibility: visible;
     width: 50%;
     transition: 150ms ease-in-out;
 }
+.handle:focus #rightArrow {
+    visibility: visible;
+    width: 50%;
+    transition: width 150ms ease-in-out;
+}
 .left-handle {
+    visibility: hidden;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
@@ -242,8 +264,18 @@ p {
 .slider-container:hover #leftArrow {
     visibility: visible;
 }
+.slider-container:hover #rightArrow {
+    visibility: visible;
+}
 #leftArrow {
     visibility: hidden;
+    display: none;
+    margin: auto;
+    width: 40%;
+}
+#rightArrow {
+    visibility: hidden;
+    margin: auto;
     width: 40%;
 }
 
@@ -255,5 +287,18 @@ h3 {
 }
 
 .progress-bar {
-    
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2.5% 12.5%;
+    color: white;
+}
+.progress-item {
+    flex: 0 0 15%;
+    height: 0.6rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, .3);
+}
+.progress-item.active {
+    background-color: rgba(255, 255, 255, .8);
 }
