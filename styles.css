@@ -185,6 +185,7 @@ p {
 }
 #unity {
     background-image: linear-gradient(rgba(4,9,30,0.8), rgba(4,9,30,0.8)), url(images/unity_waterfall.gif);
+    background-position: -50px;
 }
 
 .project-text {
@@ -352,6 +353,9 @@ p {
 
     #treatment {
         background-image: linear-gradient(rgba(4,9,30,0.6), rgba(4,9,30,0.6)), url(images/Home.png);;
+    }
+    #unity {
+        background-position: -287px;
     }
     
     .handle {
