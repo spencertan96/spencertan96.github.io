@@ -5,15 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">    
+    <script src="script.js" defer></script>
+    <script src="https://use.fontawesome.com/9df4536e0c.js"></script>
 </head>
 <body>
-    <section class="header">
-        <div class="text-box">
-            <h1>Projects</h1>
-            <p>BulletsAndBeats - Rhythm/Bullet Hell Hybrid 2D Game</p>
-            <p>Treatment Database - C# Windows Presentation Foundation (WPF) Application</p>
-            <p>Random Path Visualizer - Python Visualisation Script (Personal Project)</p>
-            <p>Making a waterfall - Playing around with Unity</p>
+    <section class="text-doc">
+        <nav>
+            <!-- <a href="index.html"><img src="images/logo.png"></a> -->
+            <!-- <a href="index.html"><img src="images/HelpButton.png"></a> -->
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="experience.html">EXPERIENCE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i id="menu-icon" class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="projects-header">
+            <h1>My Projects</h1>
+        </div>
+        <div class="text-display" id="bullets">
+            <h1>Bullets and Beats - Game</h1>
+            <p>A Rhythm/Bullet Hell Hybrid 2D game, inspired by the Touhou Project games with a Rhythm element added into the mix!
+                <br><br>
+                Players move with the mouse and collect ammo by interacting with "beats" at the appropriate timing.
+                <br><br>
+                There are enemies and bosses to defeat which fill the screen with enemy projectiles that the player will have to avoid <em>(in classic Touhou fashion!)</em>
+                Players have to balance attacking and avoid the projectiles being shot at them.
+            </p>
+            <img src="images/MainMenu.png" class="project-img">
+            <img src="images/ChaoticBossFight.gif" class="project-img left-img">
+            <p id="p-right">
+                This was a group project made for the <em>NM3216 Game Design</em> module in National University of Singapore. 
+                We used the <em>Gamemaker Studio 2</em>  engine, and the implementation was done by me and 2 of my groupmates. 
+                It took us approximately 2 months to implement the game, and I worked on it after the semester for about 1-2 months to add a few features.
+                <br><br>
+                My groupmates were in charge of the art assets, beats spawning and enemy behavior while I worked on the rest, namely player abilities and interactions, user interface, tutorials and miscellaneous stuff.    
+            </p>
+            <p id="project-link"><b>Try the game out here! &nbsp <a href="https://github.com/spencertan96/BulletsAndBeats">GITHUB PAGE</a></b></p>
+        </div>
+        <div class="text-display" id="treatment">
+            <h1>Treatment Database - App</h1>
+            <p>A C# Windows Presentation Foundation (WPF) application, purposed as a database for keeping track of treatments with additional analysis capabilities.
+                <br><br>
+                The basic features are <strong><u>adding</u></strong> treatment records with a <em>Diagnosis</em>, <em>Symptoms</em> and <em>Treatments</em> along with the <em>Effectiveness</em> of the treatments.
+                <br><br>
+                In addition to that, users can also <strong><u>search</u></strong> for specific records. It can also view the list of diagnoses, symptoms and treatments recorded in the database, with some statistics!
+            </p>  
+            <img src="images/Home.png" class="project-img">
+            <img src="images/AddRecordWithSearch.png" class="project-img left-img">
+            <p id="p-right">The app also has Analysis features. It looks at stored data and draws relations between them, displaying information such as
+                the <em>Most Common Diagnosis</em> for a certain symptom, and the <em>Most Effective Treatments</em> for certain Diagnoses.
+                <br><br>
+                Some features were added to make record-adding more efficient, being able to add records easily through intentionally designed <u>tab-based navigation</u>.
+                <br><br>
+                Additional notes can also be added to records, diagnoses or symptoms for users to remember important information.
+            </p>              
+            <p id="project-link"><b>Try the application out here! &nbsp <a href="https://github.com/spencertan96/treatment-database">PROJECT PAGE</a></b></p>
+        </div>
+        <div class="text-display" id="path">
+            <h1>Random Path Visualizer - Script</h1>
+            <p>A Python script to visualize paths, done as a personal project.
+                <br><br>
+                It requires 2 input files for visualisation, 1 being the image to use, while the other being the point graph that will be used to create the paths.
+                <br><br>
+                There are a few algorithms used to generate paths and it can be cycled through to see the different paths that each generates.
+                Currently, there is the <b>Greedy algorithm</b> and the <b>Dijkstra's Shortest Path algorithm</b>.
+            </p>
+            <img src="images/showcase_overlap_adjusted.png" class="project-img">
+            <img src="images/sample_result_dijkstra_bezier_adjusted.png" class="project-img left-img">
+            <p id="p-right">Bezier curves can also be used to make the paths more natural looking! 
+                Without it, generated paths would just be a sequence of straight lines and look really unnatural.
+                <br><br>
+                Also, there is a feature to shift the paths such that they don't intersect with other members. 
+                An example is the image on the left/above!
+                <br><br>
+                Lastly, I added a feature to save the current generated path, so that future paths will always be a different permutation from the saved path.
+            </p>           
+            <p id="project-link"><b>Check out the Github page for more details! &nbsp <a href="https://github.com/spencertan96/random-path-visualizer">GITHUB PAGE</a></b></p>
+        </div>
+        <div class="text-display" id="unity">
+            <h1>Playing around in Unity - Project</h1>
+            <p>Having already learnt and messed around with <em>Unreal Engine</em> in university, I decided to try out the other big engine, <em>Unity</em>!
+                I wanted to try and make a pretty environment and decided to attempt to create a waterfall and a lake.
+                <br><br>
+                I experimented with <strong>Unity Shader Graphs</strong> to make the shaders for the waterfall and the water surface.
+                An example of the water surface shader is on the right/below! 
+                I scrolled 2 textures in different directions to get the ripple animation on the water, with <strong>vertex displacement</strong> to simulate waves!
+            </p>
+            <img src="images/unity_shader_graph.png" class="project-img">
+            <img src="images/waterfall_blend.png" class="project-img left-img" id="waterfall">
+            <p id="p-right">For the waterfall, I used Blender to create the waterfall mesh, shown left/above!
+                Then I used Unity's <strong>Particle System</strong> to simulate the water splashes at the bottom of the waterfall.
+                <br><br>
+                I had to make sure the UV mapping was regular so that when I scrolled the texture to simulate falling water,
+                it would look realistic. 
+                <br><br>
+                I was pretty satisfied with the results! There are definitely things to improve and add on but I learnt quite a bit about how to approach and implement the concepts.
+            </p>            
         </div>
     </section>
 </body>

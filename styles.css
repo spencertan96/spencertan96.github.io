@@ -17,6 +17,72 @@
     background-size: cover;
 }
 
+/* PROJECTS TAB */
+.text-doc {
+    width: 100%;
+    background-color: #1e1e1e;
+    background-position: center;
+    background-size: cover;
+    padding: 0 0 5% 0;
+}
+.projects-header {
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+.projects-header h1 {
+    font-size: 48px;
+    padding: 0% 5% 2% 5%;
+}
+.text-display {
+    width: 90%;
+    background-position: center;
+    background-size: cover;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, .3);
+    border-width: 0.4rem;
+    border-radius: 10px;
+    margin: 0% 5% 2% 5%;
+    color: #fff;
+    text-align: left;
+}
+.text-display h1 {
+    font-size: 40px;
+    padding: 2% 2.5% calc(2% - 20px) 2.5%;
+}
+.text-display p {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(95% - 530px);
+    min-width: 36%;
+    max-width: 37.5%;
+    padding: 20px 0% 20px 2.5%;
+    font-size: 14px;
+    color: #fff;
+}
+#p-right {
+    width: calc(95% - 530px);
+    padding: 20px 2.5% 20px 2.5%;
+}
+#project-link {
+    display: block;
+    width: 88%;
+    max-width: 88%;
+    padding: 0px 0% 20px 2.5%;
+}
+.project-img {
+    display: inline-block;
+    width: 500px;
+    margin: 20px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, .3);
+    border-width: 0.2rem;
+    border-radius: 10px;
+}
+.left-img {
+    margin: 20px 0px 20px 20px;
+}
+
 nav {
     display: flex;
     padding: 2% 6%;
@@ -131,7 +197,7 @@ p {
     text-align: center;
 }
 .project-brief h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     padding: 5% 5% 3% 5%;
 }
 .project-brief p {
@@ -178,7 +244,7 @@ p {
     background-image: linear-gradient(rgba(4,9,30,0.8), rgba(4,9,30,0.8)), url(images/MainMenu.png);
 }
 #treatment {
-    background-image: linear-gradient(rgba(4,9,30,0.4), rgba(4,9,30,0.4)), url(images/Home.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/Home.png);
 }
 #path {
     background-image: linear-gradient(rgba(4,9,30,0.6), rgba(4,9,30,0.6)), url(images/sample_map.jpg);
@@ -187,27 +253,15 @@ p {
     background-image: linear-gradient(rgba(4,9,30,0.8), rgba(4,9,30,0.8)), url(images/unity_waterfall.gif);
     background-position: -50px;
 }
+#waterfall {
+    max-width: 450px;
+}
 
 .project-text {
     color: white;
     font-style: italic;
     padding: 1.5% 0% 5% 0%;
     justify-content: center;
-}
-
-.slider > img {
-    flex: 0 0 25%;
-    aspect-ratio: 16 / 9;
-    max-width: 80%;
-    /* max-width: var(--img-max-width); */
-    /* prevent huge pic taking entire screen,
-       need to add empty element on extreme ends
-       to push leftmost and rightmost to center?
-    max-height: 400px;*/
-    /* padding: 0% var(--slider-padding); */
-    margin: 0 2.5%;
-    border-radius: 45px / 26px;
-    overflow: visible;
 }
 
 .handle {
@@ -325,7 +379,7 @@ p {
         cursor: pointer;
     }
 
-    /* PROJECTS STYLING */
+    /* HOME - PROJECTS STYLING */
     h1 {
         font-size: 1.7rem;
         padding: 5% 5% 0% 5%;
@@ -361,5 +415,36 @@ p {
     .handle {
         min-width: 20px;
         background-color: rgba(0, 0, 0, .5);
+    }
+
+    /* PROJECTS STYLING */
+    .projects-header h1 {
+        font-size: 2rem;
+        padding: 3% 5% 5% 5%;
+    }
+    .text-display h1 {
+        padding: 20px 0% 10px 20px;
+    }
+    .text-display p {
+        width: 88%;
+        max-width: 88%;
+        padding: 10px 0% 10px 20px;
+    }
+    #p-right {
+        width: 88%;
+        padding: 10px 0% 20px 20px;
+    }
+    #project-link {
+        width: 88%;
+        padding: 0px 0% 15px 20px;
+    }
+    .project-img {
+        display: inline-block;
+        width: 88%;
+        margin: 20px;
+        border-style: solid;
+        border-color: rgba(255, 255, 255, .3);
+        border-width: 0.2rem;
+        border-radius: 10px;
     }
 }
