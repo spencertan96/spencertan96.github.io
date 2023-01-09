@@ -42,7 +42,7 @@
     padding: 0 0 5% 0;
 }
 .project-box {
-    width: 90%;
+    width: 87vw;
     background-position: center;
     background-size: cover;
     border-style: solid;
@@ -84,18 +84,17 @@
 }
 
 .project-body-1, .project-body-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
 }
 .project-body-1 p, .project-body-2 p {
     vertical-align: top;
     min-width: 36%;
     padding: 20px 0% 20px 20px;
-    font-size: 14px;
+    font-size: 15px;
     color: #fff;
 }
 #p-right {
-    padding: 20px 20px 20px 2.5%;
+    padding: 20px 20px 20px 10px;
 }
 .project-link {
     display: flex;
@@ -109,8 +108,7 @@
 .project-img {
     display: flex;
     align-items: center;
-    min-width: 358px;
-    max-width: 41vw;
+    max-width: 35vw;
     margin: 20px;
     border-style: solid;
     border-color: rgba(255, 255, 255, .3);
@@ -439,23 +437,25 @@ p {
     }
 
     /* PROJECTS STYLING */
-    .projects-header h1 {
-        font-size: 2rem;
-        padding: 3% 5% 5% 5%;
+    .project-header h1 {
+        padding: 2% 0px calc(2% - 20px) 20px;
+    }
+    .project-tag {
+        margin: 5px 0 0 20px;
     }
     .project-body-1, .project-body-2 {
         display: grid;
         grid-template-columns: 1fr;
     }
+    .project-body-1 p, .project-body-2 p {
+        padding: 20px 20px 10px 20px;
+    }
     #p-right {
-        width: 88%;
-        padding: 10px 0% 20px 20px;
+        padding: 10px 20px 20px 20px;
     }
     .project-img {
-        display: inline-block;
-        min-width: 500px;
-        max-width: 0;
-        margin: 20px;
+        display: flex;
+        max-width: 80vw;
         border-style: solid;
         border-color: rgba(255, 255, 255, .3);
         border-width: 0.2rem;

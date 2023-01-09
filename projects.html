@@ -57,12 +57,16 @@
                     My groupmates were in charge of the art assets, beats spawning and enemy behavior while I worked on the rest, namely player abilities and interactions, user interface, tutorials and miscellaneous stuff.    
                 </p>
             </div>
-            <p id="project-link"><b>Try the game out here! &nbsp <a href="https://github.com/spencertan96/BulletsAndBeats">GITHUB PAGE</a></b></p>
+            <div class="project-link">
+                <p><b>Try the game out here!</b></p>
+                <p><b><a href="https://github.com/spencertan96/BulletsAndBeats">GITHUB PAGE</a></b></p>
+            </div>
         </div>
         <div class="project-box" id="treatment">
             <div class="project-header">
                 <h1>Treatment Database</h1>
                 <div class="project-tag tag-app"><b>APP</b></div>
+                <div class="project-tag tag-personal"><b>PERSONAL</b></div>
             </div>
             <div class="project-body-1">
                 <p>A C# Windows Presentation Foundation (WPF) application, purposed as a database for keeping track of treatments with additional analysis capabilities.
@@ -84,52 +88,66 @@
                 </p>
             </div>
             <div class="project-link">
-                <p><b>Try the application out here!</b></p>
+                <p><b>Try the app out here!</b></p>
                 <p><b><a href="https://github.com/spencertan96/treatment-database">PROJECT PAGE</a></b></p>
             </div>
         </div>
         <div class="project-box" id="path">
-            <h1>Random Path Visualizer</h1>
-            <div class="project-tag tag-script"><b>SCRIPT</b></div>
-            <p>A Python script to visualize paths, done as a personal project.
-                <br><br>
-                It requires 2 input files for visualisation, 1 being the image to use, while the other being the point graph that will be used to create the paths.
-                <br><br>
-                There are a few algorithms used to generate paths and it can be cycled through to see the different paths that each generates.
-                Currently, there is the <b>Greedy algorithm</b> and the <b>Dijkstra's Shortest Path algorithm</b>.
-            </p>
-            <img src="images/showcase_overlap_adjusted.png" class="project-img">
-            <img src="images/sample_result_dijkstra_bezier_adjusted.png" class="project-img left-img">
-            <p id="p-right">Bezier curves can also be used to make the paths more natural looking! 
-                Without it, generated paths would just be a sequence of straight lines and look really unnatural.
-                <br><br>
-                Also, there is a feature to shift the paths such that they don't intersect with other members. 
-                An example is the image on the left/above!
-                <br><br>
-                Lastly, I added a feature to save the current generated path, so that future paths will always be a different permutation from the saved path.
-            </p>           
-            <p id="project-link"><b>Check out the Github page for more details! &nbsp <a href="https://github.com/spencertan96/random-path-visualizer">GITHUB PAGE</a></b></p>
+            <div class="project-header">
+                <h1>Random Path Visualizer</h1>
+                <div class="project-tag tag-script"><b>SCRIPT</b></div>
+                <div class="project-tag tag-personal"><b>PERSONAL</b></div>
+            </div>
+            <div class="project-body-1">
+                <p>A Python script to visualize paths, done as a personal project.
+                    <br><br>
+                    It requires 2 input files for visualisation, 1 being the image to use, while the other being the point graph that will be used to create the paths.
+                    <br><br>
+                    There are a few algorithms used to generate paths and it can be cycled through to see the different paths that each generates.
+                    Currently, there is the <b>Greedy algorithm</b> and the <b>Dijkstra's Shortest Path algorithm</b>.
+                </p>
+                <img src="images/showcase_overlap_adjusted.png" class="project-img">
+            </div>
+            <div class="project-body-2">
+                <img src="images/sample_result_dijkstra_bezier_adjusted.png" class="project-img left-img">
+                <p id="p-right">Bezier curves can also be used to make the paths more natural looking! 
+                    Without it, generated paths would just be a sequence of straight lines and look really unnatural.
+                    <br><br>
+                    Also, there is a feature to shift the paths such that they don't intersect with other members. 
+                    An example is the image on the left/above!
+                    <br><br>
+                    Lastly, I added a feature to save the current generated path, so that future paths will always be a different permutation from the saved path.
+                </p>   
+            </div>     
+            <div class="project-link">
+                <p><b>Check out the Github page for more details!</b></p>
+                <p><b><a href="https://github.com/spencertan96/random-path-visualizer">GITHUB PAGE</a></b></p>
+            </div>   
         </div>
         <div class="project-box" id="unity">
+            <div class="project-header">
             <h1>Playing around in Unity</h1>
-            <div class="project-tag tag-project"><b>PROJECT</b></div>
-            <p>Having already learnt and messed around with <em>Unreal Engine</em> in university, I decided to try out the other big engine, <em>Unity</em>!
-                I wanted to try and make a pretty environment and decided to attempt to create a waterfall and a lake.
-                <br><br>
-                I experimented with <strong>Unity Shader Graphs</strong> to make the shaders for the waterfall and the water surface.
-                An example of the water surface shader is on the right/below! 
-                I scrolled 2 textures in different directions to get the ripple animation on the water, with <strong>vertex displacement</strong> to simulate waves!
-            </p>
-            <img src="images/unity_shader_graph.png" class="project-img">
-            <img src="images/waterfall_blend.png" class="project-img left-img" id="waterfall">
-            <p id="p-right">For the waterfall, I used Blender to create the waterfall mesh, shown left/above!
-                Then I used Unity's <strong>Particle System</strong> to simulate the water splashes at the bottom of the waterfall.
-                <br><br>
-                I had to make sure the UV mapping was regular so that when I scrolled the texture to simulate falling water,
-                it would look realistic. 
-                <br><br>
-                I was pretty satisfied with the results! There are definitely things to improve and add on but I learnt quite a bit about how to approach and implement the concepts.
-            </p>            
+            <div class="project-tag tag-personal"><b>PERSONAL</b></div>
+                <p>Having already learnt and messed around with <em>Unreal Engine</em> in university, I decided to try out the other big engine, <em>Unity</em>!
+                    I wanted to try and make a pretty environment and decided to attempt to create a waterfall and a lake.
+                    <br><br>
+                    I experimented with <strong>Unity Shader Graphs</strong> to make the shaders for the waterfall and the water surface.
+                    An example of the water surface shader is on the right/below! 
+                    I scrolled 2 textures in different directions to get the ripple animation on the water, with <strong>vertex displacement</strong> to simulate waves!
+                </p>
+                <img src="images/unity_shader_graph.png" class="project-img">
+            </div>
+            <div class="project-body-2">
+                <img src="images/waterfall_blend.png" class="project-img left-img" id="waterfall">
+                <p id="p-right">For the waterfall, I used Blender to create the waterfall mesh, shown left/above!
+                    Then I used Unity's <strong>Particle System</strong> to simulate the water splashes at the bottom of the waterfall.
+                    <br><br>
+                    I had to make sure the UV mapping was regular so that when I scrolled the texture to simulate falling water,
+                    it would look realistic. 
+                    <br><br>
+                    I was pretty satisfied with the results! There are definitely things to improve and add on but I learnt quite a bit about how to approach and implement the concepts.
+                </p>       
+            </div>        
         </div>
     </section>
 </body>
