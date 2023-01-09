@@ -16,6 +16,22 @@
     background-position: center;
     background-size: cover;
 }
+.page-title {
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+.page-title h1 {
+    font-size: 48px;
+    padding: 0% 5% 2% 5%;
+}
+
+.project-text {
+    color: white;
+    font-style: italic;
+    padding: 1.5% 0% 5% 0%;
+    justify-content: center;
+}
 
 /* PROJECTS TAB */
 .text-doc {
@@ -25,16 +41,7 @@
     background-size: cover;
     padding: 0 0 5% 0;
 }
-.projects-header {
-    background-position: center;
-    color: #fff;
-    text-align: center;
-}
-.projects-header h1 {
-    font-size: 48px;
-    padding: 0% 5% 2% 5%;
-}
-.text-display {
+.project-box {
     width: 90%;
     background-position: center;
     background-size: cover;
@@ -46,42 +53,69 @@
     color: #fff;
     text-align: left;
 }
-.text-display h1 {
+.project-header h1 {
     display: inline-block;
     font-size: 40px;
-    padding: 2% 2.5% calc(2% - 20px) 2.5%;
+    padding: 2% 10px calc(2% - 20px) 20px;
 }
-.text-display p {
+.project-tag {
     display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 0 0 0 10px;
+    font-size: 14;
+    vertical-align: text-bottom;
+}
+.tag-game {
+    background: #15CC0E;
+}
+.tag-app {
+    background: #6C16B8;
+}
+.tag-script {
+    background: #000ED6;
+}
+.tag-personal {
+    background: #F27500;
+}
+.tag-school {
+    background: #D31E18;
+}
+
+.project-body-1, .project-body-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.project-body-1 p, .project-body-2 p {
     vertical-align: top;
-    width: calc(95% - 530px);
     min-width: 36%;
-    max-width: 37.5%;
-    padding: 20px 0% 20px 2.5%;
+    padding: 20px 0% 20px 20px;
     font-size: 14px;
     color: #fff;
 }
 #p-right {
-    width: calc(95% - 530px);
-    padding: 20px 2.5% 20px 2.5%;
+    padding: 20px 20px 20px 2.5%;
 }
-#project-link {
-    display: block;
-    width: 88%;
-    max-width: 88%;
-    padding: 0px 0% 20px 2.5%;
+.project-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0 25px 0;
+}
+.project-link p {
+    font-size: 24;
 }
 .project-img {
-    display: inline-block;
-    width: 500px;
+    display: flex;
+    align-items: center;
+    min-width: 358px;
+    max-width: 41vw;
     margin: 20px;
     border-style: solid;
     border-color: rgba(255, 255, 255, .3);
     border-width: 0.2rem;
     border-radius: 10px;
-}
-.left-img {
-    margin: 20px 0px 20px 20px;
 }
 
 nav {
@@ -258,33 +292,6 @@ p {
     max-width: 450px;
 }
 
-.project-text {
-    color: white;
-    font-style: italic;
-    padding: 1.5% 0% 5% 0%;
-    justify-content: center;
-}
-.project-tag {
-    display: inline-block;
-    border: 1px solid black;
-    border-radius: 4px;
-    padding: 5px;
-    font-size: 14;
-    vertical-align: text-bottom;
-}
-.tag-game {
-    background: #15CC0E;
-}
-.tag-app {
-    background: #6C16B8;
-}
-.tag-script {
-    background: #000ED6;
-}
-.tag-project {
-    background: #F27500;
-}
-
 .handle {
     border: none;
     border-radius: 15px / 20px;
@@ -368,7 +375,7 @@ p {
     background-color: rgba(255, 255, 255, .8);
 }
 
-@media(max-width: 700px){
+@media(max-width: 900px){
     .text-box h1 {
         font-size: 24px;
     }
@@ -425,13 +432,6 @@ p {
         font-size: 0.7rem;
         margin: 1rem 0;
     }
-
-    #treatment {
-        background-image: linear-gradient(rgba(4,9,30,0.6), rgba(4,9,30,0.6)), url(images/Home.png);;
-    }
-    #unity {
-        background-position: -287px;
-    }
     
     .handle {
         min-width: 20px;
@@ -443,29 +443,32 @@ p {
         font-size: 2rem;
         padding: 3% 5% 5% 5%;
     }
-    .text-display h1 {
-        padding: 20px 0% 10px 20px;
-    }
-    .text-display p {
-        width: 88%;
-        max-width: 88%;
-        padding: 10px 0% 10px 20px;
+    .project-body-1, .project-body-2 {
+        display: grid;
+        grid-template-columns: 1fr;
     }
     #p-right {
         width: 88%;
         padding: 10px 0% 20px 20px;
     }
-    #project-link {
-        width: 88%;
-        padding: 0px 0% 15px 20px;
-    }
     .project-img {
         display: inline-block;
-        width: 88%;
+        min-width: 500px;
+        max-width: 0;
         margin: 20px;
         border-style: solid;
         border-color: rgba(255, 255, 255, .3);
         border-width: 0.2rem;
         border-radius: 10px;
+    }
+    .project-link {
+        flex-direction: row;
+        justify-content: center;
+    }
+    #treatment {
+        background-image: linear-gradient(rgba(4,9,30,0.6), rgba(4,9,30,0.6)), url(images/Home.png);;
+    }
+    #unity {
+        background-position: -287px;
     }
 }
