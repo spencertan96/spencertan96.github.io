@@ -151,6 +151,21 @@
                 </p>       
             </div>        
         </div>
+        <!-- ADD BACK-TO-TOP BUTTON -->
     </section>
+    
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.width = "125px";
+            navLinks.style.right = "0";
+        }
+        // CURRENTLY CLOSE MENU TRANSITION DOESNT WORK
+        function hideMenu() {
+            // value corresponds to navLinks value in styles.css
+            navLinks.style.width = "0px";
+            navLinks.style.right = "-125px";
+        }
+    </script>
 </body>
 </html>

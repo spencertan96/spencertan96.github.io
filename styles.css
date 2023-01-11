@@ -289,6 +289,7 @@ p {
 
 /* PROJECTS TAB */
 .text-doc {
+    overflow: hidden;
     width: 100%;
     background-color: #1e1e1e;
     background-position: center;
@@ -438,10 +439,10 @@ p {
         font-size: 1.6rem;
         /* Force header to be one line, tags on next */
         white-space: nowrap;
-        padding: 20px 180px 1px 20px;
+        padding: 20px 600px 1px 20px;
     }
     .project-tag {
-        margin: 7px -9px 3px 20px;
+        margin: 7px -10px 3px 20px;
         vertical-align: bottom;
     }
     .project-body-1, .project-body-2 {
@@ -471,7 +472,7 @@ p {
     .project-link p {
         font-size: 1.5rem;
         line-height: 26px;
-        padding: 15px 0px 15px 20px;
+        padding: 15px 8px 15px 20px;
         text-align: center;
     }
     #page-link {
