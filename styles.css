@@ -363,7 +363,7 @@ p {
 .project-img {
     display: flex;
     align-items: center;
-    max-width: 47vw;
+    max-width: 31vw;
     margin: 20px;
     border-style: solid;
     border-color: rgba(255, 255, 255, .3);
