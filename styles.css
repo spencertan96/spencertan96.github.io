@@ -108,7 +108,7 @@
 .project-img {
     display: flex;
     align-items: center;
-    max-width: 35vw;
+    max-width: 47vw;
     margin: 20px;
     border-style: solid;
     border-color: rgba(255, 255, 255, .3);
@@ -286,9 +286,6 @@ p {
     background-image: linear-gradient(rgba(4,9,30,0.8), rgba(4,9,30,0.8)), url(images/unity_waterfall.gif);
     background-position: -50px;
 }
-#waterfall {
-    max-width: 450px;
-}
 
 .handle {
     border: none;
@@ -406,9 +403,9 @@ p {
     }
 
     /* HOME - PROJECTS STYLING */
-    h1 {
-        font-size: 1.7rem;
-        padding: 5% 5% 0% 5%;
+    .page-title h1 {
+        font-size: 2.1rem;
+        padding: 5%;
     }
     .progress-bar {
         padding: 3.5% 12.5%;
@@ -438,10 +435,14 @@ p {
 
     /* PROJECTS STYLING */
     .project-header h1 {
-        padding: 2% 0px calc(2% - 20px) 20px;
+        font-size: 1.6rem;
+        /* Force header to be one line, tags on next */
+        white-space: nowrap;
+        padding: 20px 180px 1px 20px;
     }
     .project-tag {
-        margin: 5px 0 0 20px;
+        margin: 7px -9px 3px 20px;
+        vertical-align: bottom;
     }
     .project-body-1, .project-body-2 {
         display: grid;
@@ -455,7 +456,9 @@ p {
     }
     .project-img {
         display: flex;
-        max-width: 80vw;
+        /* Margin not counted in border-box, need to minus */
+        max-width: calc(87vw - 40px);
+        box-sizing: border-box;
         border-style: solid;
         border-color: rgba(255, 255, 255, .3);
         border-width: 0.2rem;
@@ -465,6 +468,16 @@ p {
         flex-direction: row;
         justify-content: center;
     }
+    .project-link p {
+        font-size: 1.5rem;
+        line-height: 26px;
+        padding: 15px 0px 15px 20px;
+        text-align: center;
+    }
+    #page-link {
+        padding: 20px 20px 20px 0px;
+    }
+
     #treatment {
         background-image: linear-gradient(rgba(4,9,30,0.6), rgba(4,9,30,0.6)), url(images/Home.png);;
     }
