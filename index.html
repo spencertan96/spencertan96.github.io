@@ -32,7 +32,7 @@
         </nav>
         <div class="text-box">
             <h1>Spencer Tan's Portfolio</h1>
-            <p>This website was made to practice HTML and CSS and experiment with web development.<br>It also serves as a way to showcase my personal projects.</p>
+            <p>This website was made to practice HTML and CSS and experiment with web development.<br>It also serves as a way to showcase my personal projects!</p>
             <a href="projects.html" class="hero-btn">Click here to browse my projects!</a>
         </div>
     </section>
@@ -50,7 +50,7 @@
                 <img src="images/left_nav_arrow.png" id="leftArrow">
             </button>
             <div class="slider">
-                <div class="project" id="bullets">
+                <div class="project" id="bullets" onclick="goToBulletsProj()">
                     <div class="project-brief">
                         <h1>Bullets and Beats</h1>
                         <p>Rhythm/Bullet Hell Hybrid 2D Game</p>
@@ -58,7 +58,7 @@
                         <p>Made for a Game Design module (NM3216) in National University of Singapore</p>
                     </div>
                 </div>
-                <div class="project" id="treatment">
+                <div class="project" id="treatment" onclick="goToTreatmentProj()">
                     <div class="project-brief">
                         <h1>Treatment Database</h1>
                         <p>C# Windows Presentation Foundation (WPF) Application</p>
@@ -66,7 +66,7 @@
                         <p>Personal project</p>
                     </div>
                 </div>
-                <div class="project" id="path">
+                <div class="project" id="path" onclick="goToPathProj()">
                     <div class="project-brief">
                         <h1>Random Path Visualizer</h1>
                         <p>Python Script to Visualise Random Permutations</p>
@@ -74,7 +74,7 @@
                         <p>Personal project</p>
                     </div>
                 </div>
-                <div class="project" id="unity">
+                <div class="project" id="unity" onclick="goToUnityProj()">
                     <div class="project-brief">
                         <h1>Playing around with Unity</h1>
                         <p>Worked on a waterfall, grass assets</p>
@@ -90,12 +90,8 @@
         <div class="project-text">Click to find out more details!</div>
     </section>
 
-    <h1>Spencer Tan's Portfolio</h1>
-    <a href="/contact.html">Contact Me</a>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+    <!-- ADD BACK-TO-TOP BUTTON -->
+   
     <script>
         var navLinks = document.getElementById("navLinks");
         function showMenu() {
@@ -107,6 +103,18 @@
             // value corresponds to navLinks value in styles.css
             navLinks.style.width = "0px";
             navLinks.style.right = "-125px";
+        }
+        function goToBulletsProj() {
+            window.location.href = "projects.html#bullets";
+        }
+        function goToTreatmentProj() {
+            window.location.href = "projects.html#treatment";
+        }
+        function goToPathProj() {
+            window.location.href = "projects.html#path";
+        }
+        function goToUnityProj() {
+            window.location.href = "projects.html#unity";
         }
     </script>
 

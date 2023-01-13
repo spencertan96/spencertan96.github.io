@@ -45,13 +45,6 @@
     transition: 0.4s;
 }
 
-.project-text {
-    color: white;
-    font-style: italic;
-    padding: 1.5% 0% 5% 0%;
-    justify-content: center;
-}
-
 /* SITE NAVIGATION */
 nav {
     display: flex;
@@ -117,13 +110,14 @@ nav .fa {
 /* HOME PAGE - PROJECTS CAROUSEL */
  .projects {
     width: 100%;
+    max-height: 100vh;
     margin: auto;
     text-align: center;
     background: #1e1e1e;
     position: relative;
 }
 h1 {
-    padding: 3% 5% 0% 5%;
+    padding: 2.5% 5% 0% 5%;
     color: #fff;
     font-size: 36px;
     font-weight: 600;
@@ -181,7 +175,8 @@ p {
     padding: .25rem;
     margin: 0 4% 0 5%;
     border-radius: 10px;
-    max-height: 700px;
+    max-height: 70vh;
+    cursor: pointer;
 
     /* flex-basis: 31%;
     margin-bottom: 5%;
@@ -202,6 +197,13 @@ p {
 #unity {
     background-image: linear-gradient(rgba(4,9,30,0.8), rgba(4,9,30,0.8)), url(images/unity_waterfall.gif);
     background-position: -50px;
+}
+
+.project-text {
+    color: white;
+    font-style: italic;
+    font-size: 24;
+    padding: 20px 0px 50px 0px;
 }
 
 .handle {
@@ -417,16 +419,21 @@ p {
         min-height: 50vh;
         aspect-ratio: auto;
     }
-    .project-text {
-        padding: 4% 12.5% 6% 12.5%;
+    h1 {
+        font-size: 1.6rem;
+        padding: 20px 0px 5px 0px;
     }
     .project-brief h1 {
-        font-size: 1.5rem;
-        padding: 20% 0% 6% 0%;
+        font-size: 2.4rem;
+        padding: 60px 0% 15px 0%;
     }
     .project-brief p {
-        font-size: 0.7rem;
-        margin: 1rem 0;
+        font-size: 0.9rem;
+        margin: 1rem 0.4rem 1rem 0.4rem;
+    }
+    .project-text {
+        font-size: 1.3rem;
+        padding: 4% 12.5% 6% 12.5%;
     }
     
     .handle {
