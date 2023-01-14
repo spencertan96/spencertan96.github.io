@@ -49,7 +49,9 @@ function onHandleClick(handle) {
     const sliderIndex = parseInt(
         getComputedStyle(slider).getPropertyValue("--slider-index"));
     if (handle.classList.contains("left-handle")) {
-        slider.style.setProperty("--slider-index", sliderIndex - 1);
+        if (sliderIndex >= 1) {
+            slider.style.setProperty("--slider-index", sliderIndex - 1);
+        }
         // update progress bar highlight
         progressBar.children[sliderIndex].classList.remove("active");
         progressBar.children[sliderIndex - 1].classList.add("active");
@@ -62,10 +64,13 @@ function onHandleClick(handle) {
         if (sliderIndex <= 1) {
             document.getElementById("leftArrow").style.display = "none";
             sliderContainer.querySelector(".left-handle").style.visibility = "hidden";
+            return;
         }
     }
     else if (handle.classList.contains("right-handle")) {
-        slider.style.setProperty("--slider-index", sliderIndex + 1);
+        if (sliderIndex <= 2) {
+            slider.style.setProperty("--slider-index", sliderIndex + 1);
+        }
         // update progress bar highlight
         progressBar.children[sliderIndex].classList.remove("active");
         progressBar.children[sliderIndex + 1].classList.add("active");
@@ -78,6 +83,7 @@ function onHandleClick(handle) {
         if (sliderIndex >= 2) {
             document.getElementById("rightArrow").style.display = "none";
             sliderContainer.querySelector(".right-handle").style.visibility = "hidden";
+            return;
         }
     }
 }
