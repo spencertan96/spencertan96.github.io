@@ -20,10 +20,9 @@
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
                     <li><a href="projects.html">PROJECTS</a></li>
                     <li><a href="experience.html">EXPERIENCE</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
                 </ul>
             </div>
             <i id="menu-icon" class="fa fa-bars" onclick="showMenu()"></i>
@@ -38,23 +37,39 @@
                 <div class="project-tag tag-school"><b>SCHOOL</b></div>
             </div>
             <div class="project-body-1">
-                <p>A Rhythm/Bullet Hell Hybrid 2D game, inspired by the Touhou Project games with a Rhythm element added into the mix!
-                    <br><br>
-                    Players move with the mouse and collect ammo by interacting with "beats" at the appropriate timing.
-                    <br><br>
+                <p>A <span id="terms">Rhythm/Bullet Hell Hybrid 2D</span> game, inspired by the Touhou Project games with a <span id="terms">Rhythm</span> element added into the mix!
                     There are enemies and bosses to defeat which fill the screen with enemy projectiles that the player will have to avoid <em>(in classic Touhou fashion)</em>!
-                    Players have to balance attacking and avoid the projectiles being shot at them.
+                    <br><br>
+                    Players move with the mouse and collect ammo by interacting with <span id="terms">"beats"</span> at the appropriate timing. 
+                    <span id="terms">Beats</span> appear in time with the music's bpm and players are rewarded with more ammo for interacting with them during the correct time window.
+                    Players will have to balance between collecting ammo, avoiding enemy projectiles being shot at them, and attacking and defeating the enemies!
+                    <br><br>
+                    The game starts off easy to ease the player into the controls and help them get used to the rhythm, along with a tutorial. Then the stages get <span id="emphasis">progressively</span> harder!
+                    Here is a short clip of one of the boss fights, which as you can see, looks pretty chaotic! The boss fights look aesthetically pleasing too with enemy projectiles forming patterns.
+                    The later stages are pretty challenging but it's <span id="emphasis">definitely</span> beatable!
+                    <br><br>
+                    The player also has the <span id="terms">Pulse</span> ability that can be used to clear enemy projectiles in a line. It consumes a significant amount of ammunition though, and the player
+                    will have to decide between using <span id="terms">Pulse</span> or firing normally. 
                 </p>
                 <img src="images/ChaoticBossFight.gif" class="project-img">
             </div>
             <div class="project-body-2">
                 <img src="images/Pulse.gif" class="project-img left-img">
                 <p id="p-right">
-                    This was a group project made for the <em>NM3216 Game Design</em> module in National University of Singapore. 
-                    We used the <em>Gamemaker Studio 2</em>  engine, and the implementation was done by me and 2 of my groupmates. 
-                    It took us approximately 2 months to implement the game, and I worked on it after the semester for about 1-2 months to add a few features.
+                    This was a group project made for the <span id="terms">NM3216 Game Design</span> module in <span id="terms">National University of Singapore</span>. 
+                    <br>
+                    We made it using <span id="terms">Gamemaker Studio 2</span>, and the implementation was done by me and 2 of my groupmates.
+                    We went through a bunch of iterations, trying to balance the Rhythm element of the game - the spawning of the beats, with the enemy projectiles on the screen.
                     <br><br>
-                    My groupmates were in charge of the art assets, beats spawning and enemy behavior while I worked on the rest, namely player abilities and interactions, user interface, tutorials and miscellaneous stuff.    
+                    The end result was a system where beats in the same group will spawn <span id="emphasis">relatively close</span> to each other so that the player does not need to keep moving across the map to avoid projectiles
+                    but simply needs to avoid projectiles and stay in the general area.
+                    <br><br>
+                    It took us approximately <span id="emphasis">2 months</span> to implement the game, and I worked on it after the semester for about <span id="emphasis">1-2 months</span> to add a few features.
+                    My groupmates were in charge of the art assets, beats spawning and enemy behavior while I worked on the rest, namely player abilities and interactions, user interface, tutorials and miscellaneous stuff.
+                    <br><br>
+                    Feel free to try the game out by clicking on the link <span id="emphasis">below</span>! Further instructions will be on the Github page.    
+                    <br>
+                    Hope you have fun with the game! :)
                 </p>
             </div>
             <div class="project-link">
@@ -69,22 +84,40 @@
                 <div class="project-tag tag-personal"><b>PERSONAL</b></div>
             </div>
             <div class="project-body-1">
-                <p>A C# Windows Presentation Foundation (WPF) application, purposed as a database for keeping track of treatments with additional analysis capabilities.
+                <p>A <span id="terms">C# Windows Presentation Foundation (WPF)</span> application, purposed as a database for keeping track of treatments with <span id="emphasis">additional</span> analysis capabilities.
+                    Note-taking to record the observed symptoms and prescribed treatments is a practice that 
+                    medical practitioners have so that they can learn and improve from the effectiveness of the treatment. 
+                    This application was made as a digital substitute for note-taking for the aforementioned medical practitioners. 
                     <br><br>
-                    The basic features are <strong><u>adding</u></strong> treatment records with a <em>Diagnosis</em>, <em>Symptoms</em> and <em>Treatments</em> along with the <em>Effectiveness</em> of the treatments.
+                    The data is categorized into 4 different categories, <span id="terms">Records</span> (where patient visitations are stored), <span id="terms">Diagnoses</span>, <span id="terms">Symptoms</span> and
+                    <span id="terms">Treatments</span>, which display the respective medical terminology that the user has input, with can be furnished with more details.
+                    When you add a <span id="terms">Record</span> into the database, the app will automatically populate the <span id="terms">Diagnoses</span>, <span id="terms">Symptoms</span> 
+                    and <span id="terms">Treatments</span> data. Treatment Database uses the <span id="terms">SQLite</span> database engine so that it is self-contained within the app and can be <span id="emphasis">used offline with no Internet access</span>. 
                     <br><br>
-                    In addition to that, users can also <strong><u>search</u></strong> for specific records. It can also view the list of diagnoses, symptoms and treatments recorded in the database, with some statistics!
+                    Treatment Database allows you to <span id="terms">add</span>, <span id="terms">search</span>, <span id="terms">sort</span> treatment records. 
+                    Records can also be <span id="terms">edited</span> at any time. There is <u>additional</u> analysis for the other data categories, information such as <span id="emphasis">Most Common Diagnosis</span>
+                    for a certain symptom, <span id="emphasis">Most Effective Treatment</span> recorded in the database for a certain diagnosis. 
+                    This analysis is purely data-based and are all arise from the data that is recorded in the app's database. 
+                    <br><br>
+                    Users can also use the app to <span id="terms">jot down</span> more personal findings from their own experience, for example, personal notes for <em>hairline fractures</em> etc.
                 </p>  
                 <img src="images/Home.png" class="project-img">
             </div>
             <div class="project-body-2">
                 <img src="images/AddRecordWithSearch.png" class="project-img left-img">
-                <p id="p-right">The app also has Analysis features. It looks at stored data and draws relations between them, displaying information such as
-                    the <em>Most Common Diagnosis</em> for a certain symptom, and the <em>Most Effective Treatments</em> for certain Diagnoses.
+                <p id="p-right">
+                    The <span id="terms">"Add Record"</span> page is shown on the left/above. 
+                    Since it will be the feature used most often, I tried to optimize the record adding process so that it is <span id="emphasis">fast</span> and <span id="emphasis">streamlined</span>.
                     <br><br>
-                    Some features were added to make record-adding more efficient, being able to add records easily through intentionally designed <u>tab-based navigation</u>.
+                    First, users can navigate through the fields using intentionally designed <span id="emphasis">tab-based navigation</span> (using the <span id="terms">Tab</span> key to shift focus to the next field, <span id="terms">Shift + Tab</span> to return to the previous field). 
+                    The date will also be <span id="emphasis">automatically</span> filled in to the current date. 
+                    Also, there is an <span id="emphasis">auto-fill</span> feature that searches the database for <u>similarly-spelled</u> terms that users can use to fill in the fields faster, or avoid duplicate entries!
                     <br><br>
-                    Additional notes can also be added to records, diagnoses or symptoms for users to remember important information.
+                    With these features, users can fill in records <span id="emphasis">without</span> using the mouse at all, once they have gotten used to the navigation.
+                    <br><br>
+                    Treatment Database was deployed using <span id="terms">ClickOnce</span>, and any updates to the application will be <span id="emphasis">automatically</span> checked for when the user launches the app.
+                    <br><br>
+                    Visit the Project Page <span id="emphasis">below</span> to download the application and try it out for yourself!
                 </p>
             </div>
             <div class="project-link">
@@ -99,24 +132,45 @@
                 <div class="project-tag tag-personal"><b>PERSONAL</b></div>
             </div>
             <div class="project-body-1">
-                <p>A Python script to visualize paths, done as a personal project.
+                <p>A <span id="terms">Python</span> script for random path generation and visualization, done as a personal project.
                     <br><br>
-                    It requires 2 input files for visualisation, 1 being the image to use, while the other being the point graph that will be used to create the paths.
+                    Given a list of names, it generates a <span id="emphasis">random permutation</span> of the contents. 
+                    If an image is provided (with a config file), the script will then <span id="terms">draw</span> the path of the permutation (etc. from the first item to the last, in order) on the image.
                     <br><br>
-                    There are a few algorithms used to generate paths and it can be cycled through to see the different paths that each generates.
-                    Currently, there is the <b>Greedy algorithm</b> and the <b>Dijkstra's Shortest Path algorithm</b>.
+                    The path is chosen by <span id="emphasis">selecting nodes</span> in a graph based on one of the selected algorithms. 
+                    Currently, there is the simple <span id="terms">Greedy Algorithm</span> that selects an adjacent node that is closest to the destination, and the <span id="terms">Dijkstra's Shortest Path Algorithm</span> that finds the shortest path to the destination.
+                    You can swap between the 2 algorithms by pressing <span id="emphasis">Z or X</span>!
+                    <br><br>
+                    2 input files are required for the visualisation feature. The <span id="terms">image file</span> that will be used to draw on, and a <span id="terms">configuration text file</span>. 
+                    The config file contains the <span id="terms">names</span> of the items, <span id="terms">positions</span> of the items on the image and the <span id="terms">adjacency list</span> of the graph that the script will use.
+                    Sample input files are provided. One of the current drawbacks of the input method is that configuring the pixel positions of the items and the adjacency list for the config file is pretty tedious.
+                    <br><br>
+                    If you were to just connect each node in the graph with a <span id="emphasis">straight</span> line, you would end up with a sequence of straight lines between each item which I thought didn't look pleasing to the eyes.
+                    So, I decided to make the paths curved and smooth by using <span id="terms">Bezier Curves</span>! <span id="emphasis">Quadratic</span> bezier curves are used and joined together for the final drawn path.
+                    You can swap between Bezier paths and straight lines by pressing <span id="emphasis">B</span>!
+
                 </p>
                 <img src="images/showcase_overlap_adjusted.png" class="project-img">
             </div>
             <div class="project-body-2">
                 <img src="images/sample_result_dijkstra_bezier_adjusted.png" class="project-img left-img">
-                <p id="p-right">Bezier curves can also be used to make the paths more natural looking! 
-                    Without it, generated paths would just be a sequence of straight lines and look really unnatural.
+                <p id="p-right">In addition to the usage of bezier curves, I added a <span id="emphasis">line adjustment</span> feature. 
+                    This would adjust the path <span id="emphasis">dynamically</span> to avoid areas on the image that are specified in the <span id="terms">configuration file</span>.
+                    This can be used to avoid impassable areas on a map for example, or paths above the items in the image.
                     <br><br>
-                    Also, there is a feature to shift the paths such that they don't intersect with other members. 
-                    An example is the image on the left/above!
+                    This proved to be a difficult feature to add as decided how to shift the <span id="terms">control points</span> for the bezier curves was much more complicated than I initially assumed.
+                    Since the line adjustment was done in <span id="emphasis">real-time</span>, one consideration I had was the <span id="emphasis">processing time</span> the script needed to reach an acceptable path to draw.
                     <br><br>
-                    Lastly, I added a feature to save the current generated path, so that future paths will always be a different permutation from the saved path.
+                    Other than these features, there is the basic function of <span id="terms">saving</span> the current path so that the <span id="emphasis">exact</span> same path will not be re-generated again.
+                    The saved path is stored in a <span id="emphasis">text file</span> in the same folder as the script.
+                    <br><br>
+                    The project turned out to be a pretty fun way to play around with <span id="terms">OpenCV</span>, the <span id="terms">Python Computer Vision</span> library and experiment with <span id="emphasis">concepts</span> that I learnt in university, different algorithms and math stuff like bezier curves!
+                    <br><br>
+                    The <span id="terms">Random Path Visualizer</span> started off simple but slowly <span id="emphasis">evolved</span> to become more complicated, with more tweaks being done over time. Improvements and optimizations might be done in the future so that it runs better and is easier to use!
+                    <br><br>
+                    Check out the Github page for more information <span id="emphasis">below</span>!
+                    <br>
+                    You can also try the script out yourself with the sample input files provided and observe the different outcomes!
                 </p>   
             </div>     
             <div class="project-link">
@@ -130,24 +184,46 @@
                 <div class="project-tag tag-personal"><b>PERSONAL</b></div>
             </div>
             <div class="project-body-1">
-                <p>Having already learnt and messed around with <em>Unreal Engine</em> in university, I decided to try out the other big engine, <em>Unity</em>!
-                    I wanted to try and make a pretty environment and decided to attempt to create a waterfall and a lake.
+                <p>Having already learnt and messed around with <span id="terms">Unreal Engine</span> in university when I was took the <span id="terms">CS3247 Game Development</span> course, I decided to try out the other big game engine, <span id="terms">Unity</span>!
+                    I wanted to try and make a pretty environment and decided to attempt to create a <span id="emphasis">waterfall</span> and a <span id="emphasis">lake</span>. 
+                    The final version is used as this box's background and in the website <span id="terms">homepage</span>!
+                    Through doing this, I intended to learn about the different tools that Unity provides in <span id="emphasis">game development</span>.
                     <br><br>
-                    I experimented with <strong>Unity Shader Graphs</strong> to make the shaders for the waterfall and the water surface.
-                    An example of the water surface shader is on the right/below! 
-                    I scrolled 2 textures in different directions to get the ripple animation on the water, with <strong>vertex displacement</strong> to simulate waves!
+                    With reference to online tutorials, I experimented with <span id="terms">Unity Shader Graphs</span> to make the shaders for the <span id="emphasis">waterfall</span> and the <span id="emphasis">water surface</span>.
+                    <br>
+                    First, to create the <span id="emphasis">moving ripple texture</span> on the water surface, I scrolled 2 <span id="emphasis">Normal textures</span> in different directions.
+                    Although it's a pretty simple technique, the results are pretty impressive and realistic!
+                    <br><br>
+                    For the <span id="emphasis">water opacity</span>, I used the distance between the camera and the water surface and did a <span id="terms">linear interpolation</span> between a <span id="emphasis">shallow</span> and <span id="emphasis">deep</span> color to achieve the final result.
+                    <br><br>
+                    Then, to simulate <span id="emphasis">waves</span>, I did <span id="terms">vertex displacement</span> by applying gradient noise to the surface vertices and displacing them correspondingly.
+                    An <span id="emphasis">example</span> of the water surface shader is on the right/below! 
+                    <br><br>
+                    To achieve the final result, I had to mess around with the <span id="terms">parameter values</span> for the shader quite a bit, and realised how important <span id="emphasis">experience</span> is in this regard. 
+                    Knowing what you want the outcome to look like and the general values speeds up this process tremendously.
                 </p>
                 <img src="images/unity_shader_graph.png" class="project-img">
             </div>
             <div class="project-body-2">
                 <img src="images/waterfall_blend.png" class="project-img left-img" id="waterfall">
-                <p id="p-right">For the waterfall, I used Blender to create the waterfall mesh, shown left/above!
-                    Then I used Unity's <strong>Particle System</strong> to simulate the water splashes at the bottom of the waterfall.
+                <p id="p-right">For the <span id="emphasis">waterfall</span>, I used <span id="terms">Blender</span> to create the waterfall mesh, shown on the left/above!
+                    It took some getting used to, since I had to learn the <span id="terms">keyboard shortcuts</span> to work smoothly. I also tried creating a more <span id="emphasis">non-uniform</span> mesh but I wasn't
+                    satisfied with the results and decided to go with the <span id="emphasis">straight</span> mesh.
                     <br><br>
-                    I had to make sure the UV mapping was regular so that when I scrolled the texture to simulate falling water,
-                    it would look realistic. 
+                    Another thing I had to learn about was <span id="terms">UV mapping</span>. I needed to make sure it was <span id="emphasis">regular</span> so that when I scrolled the texture to simulate falling water in the waterfall shader,
+                    it would fall <span id="emphasis">vertically</span> downwards and look realistic. 
                     <br><br>
-                    I was pretty satisfied with the results! There are definitely things to improve and add on but I learnt quite a bit about how to approach and implement the concepts.
+                    Then I used Unity's <span id="terms">Particle System</span> to simulate the <span id="emphasis">water splashes</span> at the bottom of the waterfall.
+                    I first tried using a <span id="terms">Ripple shader</span> but it had some interference issues with the water surface shader and didn't fit in the scene.
+                    <br><br>
+                    The waterfall shader was pretty similar to the water surface shader, with the only difference being the <span id="terms">texture scrolling</span>. 
+                    Instead of using 2 Normal textures, I used some noise and applied it to the shader.
+                    <br><br>
+                    Also, I used <span id="terms">vertex displacement</span> again to adjust the <span id="emphasis">mesh vertices</span> so that the water <span id="emphasis">moves</span> as it goes down the waterfall instead of going 
+                    straight down.
+                    <br><br>
+                    I was pretty satisfied with the results! There are definitely things to improve and add on but I learnt quite a lot about different <span id="terms">techniques</span> and <span id="terms">approaches</span> that developers use to simulate real life physics. 
+                    This gave me some experience in implementing these concepts <span id="emphasis">practically</span> too!
                 </p>       
             </div>        
         </div>

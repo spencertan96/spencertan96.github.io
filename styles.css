@@ -359,6 +359,14 @@ p {
 #p-right {
     padding: 20px 20px 20px 10px;
 }
+#terms {
+    color: #2DD8E0;
+    font-weight: bold;
+}
+#emphasis {
+    color: #E84D48;
+    font-weight: bold;
+}
 .project-link {
     display: flex;
     flex-direction: column;
@@ -377,6 +385,28 @@ p {
     border-color: rgba(255, 255, 255, .3);
     border-width: 0.2rem;
     border-radius: 10px;
+}
+
+/* ABOUT STYLING */
+.bordered-box {
+    width: 87vw;
+    background-color: #1e1e1e;
+    background-position: center;
+    background-size: cover;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, .3);
+    border-width: 0.4rem;
+    border-radius: 10px;
+    margin: 0% 5% 2% 5%;
+    color: #fff;
+    text-align: left;
+}
+.text-body p {
+    vertical-align: top;
+    min-width: 36%;
+    padding: 20px 0% 20px 20px;
+    font-size: 15px;
+    color: #fff;
 }
 
 @media(max-width: 900px){
