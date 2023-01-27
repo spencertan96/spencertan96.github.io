@@ -386,6 +386,9 @@ p {
     border-width: 0.2rem;
     border-radius: 10px;
 }
+#waterfall {
+    max-width: 23vw;
+}
 
 /* ABOUT STYLING */
 .bordered-box {
