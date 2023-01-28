@@ -390,6 +390,44 @@ p {
     max-width: 23vw;
 }
 
+/* EXPERIENCES STYLING */
+.experience-header h1 {
+    display: inline-block;
+    font-size: 40px;
+    padding: 2% 10px 5px 20px;
+}
+.experience-header h2 {
+    display: block;
+    font-size: 20px;
+    font-family: 'Courier', Courier, monospace;
+    padding: 2px 10px 0 20px;
+}
+#tatsu {
+    background-image: linear-gradient(rgba(4,9,30,0.8), rgba(4,9,30,0.8)), url(images/tatsuworks_logo.png);
+}
+#nparks {
+    background-image: linear-gradient(rgba(4,9,30,0.8), rgba(4,9,30,0.8)), url(images/tatsuworks_logo.png);
+}
+
+.job-tag {
+    display: inline-block;
+    background: #DB571B;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 0 0 0 10px;
+    font-size: 20;
+    vertical-align: text-bottom;
+}
+.job-duration {
+    display: inline-block;
+    background: #DB571B;
+    padding: 5px;
+    margin: 0 0 0 10px;
+    font-size: 20;
+    vertical-align: text-bottom;
+}
+
 /* ABOUT STYLING */
 .bordered-box {
     width: 87vw;
