@@ -449,8 +449,11 @@ p {
     font-size: 20;
     vertical-align: text-bottom;
 }
-.tag-game {
+.tag-game-design {
     background: #15CC0E;
+}
+.tag-game-econ {
+    background: #088d03;
 }
 .tag-app {
     background: #6C16B8;
@@ -461,8 +464,8 @@ p {
 .tag-personal {
     background: #F27500;
 }
-.tag-school {
-    background: #D31E18;
+.tag-backend {
+    background: #0a9cd6;
 }
 .job-duration {
     display: table-cell;
@@ -510,7 +513,6 @@ p {
     flex-direction: column;
     align-items: center;
     max-width: 31vw;
-    justify-content: space-around;
     margin: 10px 20px 10px 20px;
 }
 .experience-img {
@@ -523,6 +525,17 @@ p {
     border-width: 0.2rem;
     border-radius: 10px;
 }
+#img-tatsugotchi {
+    width: 20vw; 
+    border-width: 0; 
+    border-radius: 10px 0px 0px 10px;
+}
+#img-house-custom {
+    width: 11vw; 
+    border-width: 0; 
+    border-radius: 0px 10px 10px 0px;
+}
+
 .img-row {
     display: flex;
     flex-direction: row;
@@ -537,6 +550,7 @@ p {
     position: absolute;
     color: rgb(16, 228, 243) !important;
     font-size: 30px !important;
+    line-height: 32px;
 	text-shadow: 3px 2px 3px black;
     left: 3px;
     bottom: 3px;
@@ -680,5 +694,65 @@ p {
 
     #treatment {
         background-image: linear-gradient(rgba(4,9,30,0.6), rgba(4,9,30,0.6)), url(images/Home.png);;
+    }
+}
+
+@media(max-width: 1050px){
+    /* EXPERIENCES STYLING */
+    .experience-header {
+        display: block;
+    }
+    .job-left li {
+        display: inline-block;
+        font-size: 40px;
+        padding: 0px 0px 5px 0px;
+    }
+    .job-left a {
+        padding: 0px 7px 0px 0px;
+    }
+    .job-tag {
+        margin: 1px 6px 3px -1px;
+        vertical-align: super;
+    }
+    .job-duration {
+        display: block;
+        width: fit-content;
+        margin: 2px 0 9px 20px;
+        padding: 5px 10px 7px 10px;
+    }
+
+    .experience-body {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .experience-body p {
+        padding: 20px 20px 10px 20px;
+    }
+    #p-right {
+        padding: 10px 20px 0px 20px;
+    }
+
+    .experience-imgs {
+        max-width: auto;
+        align-items: flex-start;
+    }
+    .experience-img {
+        display: flex;
+        /* Margin not counted in border-box, need to minus */
+        max-width: 77vw;
+        box-sizing: border-box;
+        border-style: solid;
+        border-color: rgba(255, 255, 255, .3);
+        border-width: 0.2rem;
+        border-radius: 10px;
+    }
+    .img-row {
+        max-width: 83vw;
+    }
+    #img-tatsugotchi {
+        width: 46vw;
+    }
+    #img-house-custom {
+        width: 29vw;
     }
 }
