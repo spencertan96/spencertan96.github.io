@@ -430,6 +430,8 @@ p {
     padding: 2px 10px 0 20px;
 }
 #tatsu {
+    background-position: left;
+    background-size: auto;
     background-image: linear-gradient(rgba(4,9,30,0.8), rgba(4,9,30,0.8)), url(images/tatsuworks_logo.png);
 }
 #nparks {
