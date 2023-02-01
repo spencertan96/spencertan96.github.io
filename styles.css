@@ -430,12 +430,14 @@ p {
     padding: 2px 10px 0 20px;
 }
 #tatsu {
-    background-position: left;
-    background-size: auto;
+    background-position: initial;
+    background-size: 60%;
     background-image: linear-gradient(rgba(4,9,30,0.8), rgba(4,9,30,0.8)), url(images/tatsuworks_logo.png);
 }
 #nparks {
-    background-image: linear-gradient(rgba(4,9,30,0.8), rgba(4,9,30,0.8)), url(images/tatsuworks_logo.png);
+    background-position: left;
+    background-size: 30%;
+    background-image: linear-gradient(rgba(4,9,30,0.8), rgba(4,9,30,0.8)), url(images/nparks_logo.png);
 }
 
 .job-left {
@@ -521,6 +523,23 @@ p {
     display: flex;
     align-items: center;
     max-width: 31vw;
+    height: inherit;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, .3);
+    border-width: 0.2rem;
+    border-radius: 10px;
+}
+.experience-imgs-large {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 43vw;
+    margin: 10px 20px 10px 20px;
+}
+.experience-img-large {
+    display: flex;
+    align-items: center;
+    max-width: 43vw;
     height: inherit;
     border-style: solid;
     border-color: rgba(255, 255, 255, .3);
@@ -734,11 +753,11 @@ p {
         padding: 10px 20px 0px 20px;
     }
 
-    .experience-imgs {
+    .experience-imgs, .experience-imgs-large {
         max-width: auto;
         align-items: flex-start;
     }
-    .experience-img {
+    .experience-img, .experience-img-large {
         display: flex;
         /* Margin not counted in border-box, need to minus */
         max-width: 77vw;

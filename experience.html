@@ -90,13 +90,14 @@
                     I was tasked <span id="emphasis">alone</span> with this project, to design the <span id="emphasis">entire</span> system - both on the <span id="terms">database</span> side and the <span id="terms">backend</span>.
                     The <span id="emphasis">implementation</span> on the database would be done by a colleague, but the backend implementation would be done by me.
                     I designed how the database would <span id="emphasis">store</span> all the required information, down to the <span id="terms">data types</span> and <span id="terms">procedures</span> each call would do, along with the <span id="terms">backend functionality</span>.
+                    <br><br>
                     Other than a slight hiccup with the database implementation, the design worked well! The system could handle sending mail to <span id="emphasis">ALL</span> users (with <span id="emphasis">hundreds of thousands</span> of users, this was <span id="terms">non-trivial</span> and needed to be handled) and mail to <span id="emphasis">specific</span> users.
                     I handled that concern by having a separate <span id="terms">"Global Mail"</span> and a <span id="terms">"Personal Mail"</span> where announcements would be stored in the Global Mail, which was stored in <span id="emphasis">1</span> location that all users would access.
                     This meant that there was <span id="emphasis">no duplication of data</span> and global mail would be have <span id="terms">O(1) space and time complexity</span>. 
                     When <span id="emphasis">individual</span> users handled the Global Mail, for example by deleting, reading or marking as unread, a separate <span id="terms">flag</span> would be set for each user (with defaults). 
                     <br><br>
                     Another sizeable feature I worked on was the <span id="emphasis">Moderation features</span>, namely the <span id="terms">infract</span>, <span id="terms">warn</span>, <span id="terms">prohibit</span> and <span id="terms">exception</span> commands.
-                    It was added to make Tatsu a more <span id="emphasis">comprehensive</span> Discord bot, so that servers would not need to get a separate bot to deal with moderation unless they needed very specific features.
+                    It was added to make Tatsu a more <span id="emphasis">comprehensive</span> Discord bot, so that servers would not need to get a <span id="emphasis">separate</span> bot to deal with moderation unless they needed very specific features.
                     When enabled, Tatsu could <span id="emphasis">screen members' messages</span> and delete the message and warn or even remove them from the server if they contained any <span id="emphasis">offensive words</span>.
                     This required me to work with a <span id="terms">NoSQL</span> database, <span id="terms">Redis</span> that Tatsu Works used, a different one compared to the SQL database, <span id="terms">PostgreSQL</span> that I worked with in the Mail system.
                     At the time of writing, these moderation commands are <span id="emphasis">still</span> the ones used by Tatsu now!
@@ -133,7 +134,7 @@
                     I also got the opportunity to work on many projects where my work was <span id="emphasis">released to production</span> and entertained many users! Different areas were exposed to me, <span id="terms">designing games</span>, <span id="terms">balancing game economies and systems</span>,
                     working with <span id="terms">different databases</span>, <span id="terms">backend development</span> and <span id="emphasis">more</span>! 
                     <br><br>
-                    I was approached to extend my internship into a <span id="emphasis">full or part-time</span> role but I wanted to priost and 
+                    I was approached to extend my internship into a <span id="emphasis">full or part-time</span> role but I wanted to prioritize my studies and 
                     so declined the offer. Even now, I'm sure it would have also been a great role, but I feel that the time wasn't right to accept it!
                 </p>
             </div>
@@ -142,26 +143,91 @@
             <div class="experience-header">
                 <div class="job-left">
                     <li><a href="https://www.nparks.gov.sg/">National Parks Board</a></li>
+                    <div class="job-tag tag-app"><b>HTML</b></div>
+                    <div class="job-tag tag-app"><b>Javascript</b></div>
                     <div class="job-tag tag-app"><b>Visual Basic</b></div>
                     <div class="job-tag tag-backend"><b>Databases</b></div>
                 </div>
                 <div class="job-duration"><b>May 2019 - Aug 2019</b></div>
             </div>
             <div class="experience-role">Computer Science Intern</div>
-            <div class="experience-body-1">
-                <p>National Parks Board, or NParks for short, is ...
-                    I interned at the Plant Storages Unit, which handled ...
-                    ...It isn't a software-focused company... regarding computer science stuff
-                    But being my first foray into the workplace, I learnt how communication is done in a company, 
+            <div class="experience-body">
+                <p><a href="https://www.nparks.gov.sg/">National Parks Board</a>, or <span id="terms">NParks</span> for short, is one of the <span id="emphasis">statutory boards</span> of the government of Singapore. 
+                    They are the lead agency for <span id="terms">greenery</span>, <span id="terms">biodiversity conservation</span>, and <span id="terms">wildlife and animal health</span>, <span id="terms">welfare and management</span>.
                     <br><br>
-                    Main area I worked on = Databases
-                    Exposure to proprietary databases
-                    Learnt about databases, management and maintenance 
+                    I was posted to the <span id="terms">Plant Records Unit</span>. The unit is in charge of surveying, labelling and tracking the <span id="emphasis">living collections</span> in the <span id="terms">Singapore Botanic Gardens</span>.
+                    With <span id="emphasis">thousands of species</span> of flora in the Gardens, this is no small task!
                     <br><br>
-                    Also VBA 
-                    Vba excel workflow improvement forms 
+                    My <span id="terms">primary task</span> was to <span id="emphasis">migrate</span> their current ageing database to a new database.
+                    This included the <span id="emphasis">analysis</span> of different prospective databases to come up with a <span id="emphasis">recommendation</span> on which would be the best option, 
+                    and <span id="emphasis">exporting</span> of the current data.
+                    <br><br>
+                    Since there are <span id="emphasis">numerous</span> accesses and updates made to the database daily <em>(with the huge number of plants in the Gardens)</em>, one major consideration is that those processes should be <span id="terms">fast and streamlined</span>.
+                    I looked into the regular tasks that my colleagues did to <span id="emphasis">understand</span> the processes and workflow. 
+                    <br><br>
+                    Also, different databases also differ in the <span id="terms">services</span> that they provide. 
+                    For example, the <a href="https://herbaria.plants.ox.ac.uk/bol/">BRAHMS database</a> has an <span id="terms">in-built ARCGIS feature</span> <em>(a mapping solution)</em> that make it easy to map botanical collections
+                    if the existing collection already utilizes some ARCGIS-compatible maps.
                 </p>
-                <img src="images/ChaoticBossFight.gif" class="project-img">
+                <div class="experience-imgs-large">
+                    <div style="position: relative;">
+                        <img src="images/brahms_arcgis.png" class="experience-img-large">
+                        <p class="text-overlay">BRAHMS Database's in-built ARCGIS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="experience-body">
+                <div class="experience-imgs">
+                    <img src="images/excel_convert_form.gif" class="experience-img">
+                </div>
+                <p id="p-right">Other than the database analysis, I also joined in a number of <span id="terms">physical surveys</span> of the plants in the Gardens with my colleagues. 
+                    I noticed that in their <span id="terms">regular tasks</span> of identifying and labelling trees, they had to record and track data <span id="emphasis">on paper</span> before <span id="emphasis">manually</span> entering them into the database back in the office.
+                    This was partly due to the remoteness of certain locations and <span id="emphasis">lack of Internet connectivity</span>, resulting in a <span id="emphasis">significant overhead</span> and loss of time. 
+                    <br><br>
+                    Thus, I set out to create a <span id="terms">HTML form</span> that could be used <span id="emphasis">offline</span> and could <span id="emphasis">automatically</span> convert collected data into an <span id="terms">Excel file</span>. 
+                    Personnel could use the form to record data while <span id="terms">out in the field</span> and would not need to spend time <span id="emphasis">manually</span> transferring the data to the database.
+                    I picked up some <span id="terms">HTML</span>, <span id="terms">CSS</span> and <span id="terms">Javascript</span> to do so and managed to create a <span id="terms">prototype form</span> that could accomplish this task.
+                    <br><br>
+                    Here is a <span id="terms">demo</span> of the prototype form on the <u>left/above</u>! Since this is just a <span id="emphasis">prototype</span>, it's pretty barebones and simply functional. 
+                    Further improvements such as adding the ability to <span id="terms">view</span> added records, <span id="terms">editing</span> your entries can be done too!
+                    <br><br>
+                    In a functional botanic garden, making sure that all the <span id="terms">collected data</span> is <span id="emphasis">accurate</span> is essential. 
+                    Any inaccuracies such as <span id="emphasis">mistyped</span> identification numbers can result in <span id="terms">"ghost"</span> specimens that exist in the database but <span id="emphasis">cannot</span> be found in the Gardens.
+                    <br><br>
+                    One of the other tasks I was given was to work on a <span id="terms">checksum algorithm</span>. 
+                    Checksum algorithms are used to <span id="terms">detect errors</span> that occur during transmission or storage, mostly due to <span id="emphasis">human error</span>. 
+                    This would reduce errors such as a <span id="terms">typo</span> in the accession number when a personnel entered new data into the database. 
+                </p>
+            </div>
+            <div class="experience-body">
+                <p>I considered a few algorithms, the <span id="terms">Luhn</span>, <span id="terms">Verhoeff</span> and <span id="terms">Damm algorithms</span> and eventually selected the Luhn algorithm.
+                    The other 2 algorithms were <span id="emphasis">more complex</span> and might take a <span id="emphasis">longer time</span> to process. 
+                    Also, since <span id="terms">accession numbers</span>, which is what the checksum will be used for, 
+                    contains <span id="emphasis">special characters</span> along with numbers, the <span id="terms">Luhn mod N algorithm</span> was chosen as it could handle special characters.
+                    <br><br>
+                    Here's my <span id="terms">implementation</span> of the Luhn mod N algorithm in <span id="terms">Visual Basic</span> on the <u>right/below</u>. 
+                    I used <span id="emphasis">N = 39</span> as that is the total number of <span id="terms">possible</span> characters that can appear in a specimen's accession number.
+                    <br><br>
+                    To make sure that my <span id="terms">implementation</span> was correct, I created some <span id="emphasis">automated tests</span> in Excel using <span id="terms">Visual Basic</span> to check for the errors that the algorithm could not detect.
+                    Since the algorithm was relatively simple, it <span id="emphasis">could not detect all errors</span> and <span id="terms">double transposition errors</span> <em>("103" instead of "301")</em> and a few <span id="terms">twin errors</span> <em>("99" mistyped as "22")</em> would pass. 
+                    However, these errors are <span id="emphasis">very unlikely</span> and the <span id="terms">Luhn mod N algorithm</span> will be sufficiently strong enough to detect most human errors and <span id="terms">improve data integrity significantly</span>.
+                    <br><br>
+                    A GIF of my <span id="terms">conclusions</span> from the tests is on the <u>right/below</u>! As mentioned above, <span id="emphasis">double transposition errors</span> aren't caught. This is because Luhn's algorithm 
+                    sums up the <span id="emphasis">all</span> digits <span id="terms">after doubling</span> the even digits. So if a digit is <span id="emphasis">accidentally swapped</span> with another <span id="terms">even</span> digit, the algorithm will not detect it.
+                    <br><br>
+                    Being my <span id="emphasis">first</span> foray into the workplace, my internship at <span id="terms">NParks</span> was a great starting point. 
+                    Although it isn't a <span id="terms">software-focused</span> company, meaning that it could not teach me nor expose me to more <span id="emphasis">technical knowledge</span> for my field, I could still learn <span id="emphasis">non-technical</span> stuff!
+                    It forced me to <span id="emphasis">self-learn</span> and research, picking up <span id="terms">HTML</span>, <span id="terms">CSS</span> and <span id="terms">Javascript</span> which I had not worked with before. 
+                    Hearing from my colleagues' gripes about software also taught me that it is important for software to be built with the <span id="terms">user in mind</span>. 
+                    Even if a program had the <span id="terms">functionality</span> to complete a task, if users found it <span id="emphasis">hard to navigate</span> and use the interface, it would <span id="emphasis">not</span> be a good program.
+                    <br><br>
+                    The <span id="terms">Botanic Gardens</span> was also a <span id="emphasis">very</span> pleasant place to work at. Being someone that <span id="terms">enjoys nature</span>, whenever I needed a break, I could relax and walk around the Gardens to clear my mind.
+                    My colleagues were also very <span id="emphasis">passionate</span> people <em>(which I suppose comes from the closeness they work with flora)</em> and <span id="terms">inspired</span> me to put my all into my work!
+                </p>
+                <div class="experience-imgs">
+                    <img src="images/luhn_implementation.png" class="experience-img" style="margin: 0 0 7px 0;">
+                    <img src="images/luhn_tests.gif" class="experience-img">
+                </div>
             </div>
         </div>
     </section>
