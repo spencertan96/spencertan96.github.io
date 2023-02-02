@@ -17,6 +17,10 @@
     background-position: center;
     background-size: cover;
 }
+.home-header {
+    font-size: 62px;
+    margin: 15px 0 40px 0;
+}
 .page-title {
     background-position: center;
     color: #fff;
@@ -120,7 +124,7 @@ h1 {
     padding: 2.5% 5% 0% 5%;
     color: #fff;
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 200;
 }
 h3 {
     color: #fff;
@@ -327,7 +331,7 @@ p {
     border-radius: 4px;
     padding: 5px;
     margin: 0 0 0 10px;
-    font-size: 14;
+    font-size: 16;
     vertical-align: text-bottom;
 }
 .tag-game {
@@ -578,25 +582,100 @@ p {
 }
 
 /* ABOUT STYLING */
-.bordered-box {
-    width: 87vw;
+.one-screen {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
     background-color: #1e1e1e;
     background-position: center;
     background-size: cover;
-    border-style: solid;
-    border-color: rgba(255, 255, 255, .3);
-    border-width: 0.4rem;
-    border-radius: 10px;
-    margin: 0% 5% 2% 5%;
+}
+.invisible-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 87vw;
+    margin: 3% 5% 2% 5%;
     color: #fff;
     text-align: left;
 }
-.text-body p {
+.text-background {
+    display: flex;
+    justify-content: center;
+    padding: 20px 30px 20px 30px;
+    margin: 0 34% 3% 0;
+    font-size: 44px;
+    background-color: #5e626f;    
+    font-weight: 100;
+    animation: fade-in 1.5s 1.5s ease both;
+}
+.about-header {
+    padding: 20px 30px 20px 30px;
+    margin: 0 50% 3% 0;
+    animation: fade-in 0.75s 0.75s ease both;
+}
+.hello-img {
+    left: 11%;
+    width: 300px;
+}
+.about-section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.module-container {
+    display: flex; 
+    align-items: flex-start; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+    padding: 5px 20px 20px 20px;
+}
+.border-radius-text {
     vertical-align: top;
-    min-width: 36%;
-    padding: 20px 0% 20px 20px;
+    padding: 16px 14px 16px 14px;
+    margin: 0px 17px 14px 0px;
+    background-color: #5e626f;   
+    border-radius: 13px;
     font-size: 15px;
     color: #fff;
+    animation: fade-in 2s 2s ease both;
+}
+.tag-algo {
+    background: #c46c08;
+}
+.tag-gamedev {
+    background: #48a709e3;
+}
+.tag-ai {
+    background: #853bca;
+}
+.tag-db {
+    background: #0a9cd6;
+}
+
+.about-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.about-body p {
+    vertical-align: top;
+    min-width: 36%;
+    padding: 20px 20px 20px 20px;
+    font-size: 15px;
+    color: #fff;
+    animation: fade-in 2s 2s ease both;
+}
+.about-bottom {
+    display: flex;
+    justify-content: center;
+    padding: 20px 30px 20px 30px;
+    color: #fff;
+    background-color: #dcdfe931;
+    animation: fade-in 1.5s 1.5s ease both;
 }
 
 @media(max-width: 900px){
